@@ -1,0 +1,202 @@
+
+.listing-box {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0%;
+    border-radius: 15px;
+    margin-top: -45px;
+    max-width: 92%;
+    margin-left: 95px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.263);
+}
+
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+.search-box input{
+    font-size: 20px;
+    width: 500px;
+    border: none;
+    border-radius: 0%;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+.search-box i{
+    position: relative;
+    top: 15px;
+}
+.sort-box {
+    text-align: right;
+}
+.listing-table {
+    margin-top: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+.listing-bg{
+    margin-left: 77px;
+    width: 95%;
+}
+.listing-logo{
+    height: 80px;
+    align-items: center;
+    position: absolute;
+    z-index: +2;
+    width: 100%;
+    margin-top: -140px;
+}
+.start-btn{
+    background-color: rgba(45, 45, 255, 0.91);
+    color: white;
+}
+.listing-table button{
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+.bg-image-container h3{
+    margin-left: 120px;
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+}
+.bg-image-container i{
+    margin-right: 20px;
+}
+/* Mobile specific styles */
+.mobile-projects .project-card {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 373px;
+    padding: 15px;
+    margin-left: 0%;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.project-actions {
+    position: relative;
+    z-index: +100;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-actions button {
+    position: relative;
+    z-index: +1000;
+    flex: 1 1 auto;
+    margin-bottom: 5px;
+    width: 20px;
+}
+.type-category{
+    display: flex;
+    gap: 10px;
+}
+.div-dept{
+    display: flex;
+    gap: 10px;
+}
+.project-card span{
+    font-weight: 500;
+}
+.project-card strong{
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+    .theme-status{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pagination button {
+        width: 40%;
+        margin-top: 0%;
+        margin-bottom: 80px;
+    }
+    .content-container {
+        position: absolute;
+    }
+    
+    .listing-box {
+        position: absolute;
+        z-index: 1;
+        border-radius: 0px;
+        background-color: white;
+        padding: 10px;
+        padding-bottom: 0%;
+        position: relative;
+        top: 90px;
+        width: 490px;
+        margin: 0%;
+        box-shadow: none;
+    }
+    .search-box{
+        display: flex;
+        z-index: 1;
+        gap: 12px;
+    }
+    .search-sort{
+        display: flex;
+    }
+    .search-box i {
+        margin: 0%;
+        position: relative;
+        top: 25px;
+        left: 10px;
+    }
+    .search-box  input{
+    padding: 10px;
+    font-size: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0%;
+        width: 200px;
+    }
+    .sort-box {
+        width: 1px;
+        background-repeat: no-repeat;
+    }
+    .sort-box select{
+        border: none;
+        width: 50px;
+        position: relative;
+        right: 10px;
+        background-repeat: no-repeat;
+    }
+    .pagination {
+        margin-top: 0px;
+    }
+    .listing-bg{
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: +5;
+        margin-left: 0px;
+        width: 200%;
+    }
+    .listing-logo{
+        display: none;
+    }
+    .start-btn{
+        background-color: rgba(45, 45, 255, 0.91);
+        color: white;
+    }
+    .bg-image-container h3{
+        margin-left: 50px;
+        position: fixed;
+        z-index: +6;
+        color: white;
+        margin-top: 30px;
+    }
+    .bg-image-container i{
+       display: none;
+    }
+}
